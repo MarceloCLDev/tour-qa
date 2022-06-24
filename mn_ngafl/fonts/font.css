@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'HelvNLT';
+    src: url('HelveticaNeueLT-Condensed.eot');
+    src: url('HelveticaNeueLT-Condensed.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueLT-Condensed.woff2') format('woff2'),
+        url('HelveticaNeueLT-Condensed.woff') format('woff'),
+        url('HelveticaNeueLT-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelvNLT';
+    src: url('HelveticaNeueLT-BoldCond.eot');
+    src: url('HelveticaNeueLT-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueLT-BoldCond.woff2') format('woff2'),
+        url('HelveticaNeueLT-BoldCond.woff') format('woff'),
+        url('HelveticaNeueLT-BoldCond.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
