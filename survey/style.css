@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: 0
+}
+
+img {
+    border: none;
+    display: block
+}
+
+ol,
+ul {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer !important
+}
+body,
+html {
+    height: 100%;
+	min-height: 100%;
+}
+body {
+	position: relative;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background: url('assets/homedepot-bg-desktop.jpg') no-repeat center top;
+	background-size: cover;
+}
+input,
+select,
+textarea,
+kbd {
+	font-family: 'Poppins', sans-serif;
+}
+[disabled] {
+	opacity: .3;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto max-content;
+	min-height: 100%;
+}
+.flow {
+	margin: 30px 0;
+}
+.step {
+	width: 100%;
+	max-width: 600px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.container {
+	width: 100%;
+	padding: 15px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 6px 6px 0 0;
+	text-align: left;
+}
+[data-step="1"] .container {
+	display: grid;
+	grid-template-columns: auto max-content ;
+}
+.cta-block {
+	width: 100%;
+	text-align: center;
+	background: #232f3e;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	border-radius: 0 0 6px 6px;
+	display: inline-block;
+}
+.cta-block li {
+	font-size: 1.25rem;
+	background: #F68121;
+	box-shadow: 0 1px 0 1px #FF9E4D;
+	margin: 20px auto;
+	color: #fff;
+	cursor: pointer;
+	width: max-content;
+	text-transform: uppercase;
+	border-radius: 4px;
+	padding: 10px 20px;
+	min-width: 30%;
+}
+/* copy */
+h1, h2, h3 {
+    margin-bottom: 15px; 
+    line-height: 1.1;
+	font-weight: 400;
+	padding: 0;
+	display: inline-block;
+}
+h1 {
+    font-size: 1.5rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1rem;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* footer */
+footer {
+	width: 100%;
+	max-width: 600px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	padding: 20px 5px;
+	text-align: center;
+	font-size: .75rem;
+	color: #fff;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+footer p {
+	color: #707070;
+}
+
+/* form */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	width: 100%;
+	padding: 20px 20px;
+	text-align: left;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background: #ecf0fe;
+	font-size: 1.125rem;
+	color: #999;
+	font-weight: 400;
+	margin: 10px 0 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  	background: #E5E5E5;
+	color: #999;
+}
+
+textarea {
+	margin-top: 15px;
+	height: 120px;
+	padding: 20px;
+	resize: none;
+}
+
+small {
+	width: 92%;
+	max-width: 404px;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    opacity: .5;
+    font-size: 10px;
+}
+
+select {
+    background: url('assets/arrow-down-sign-to-navigate.png') no-repeat center right 10px #ecf0fe !important;
+	background-size: 22px auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+.selected {
+    border: 1px solid #4bad39;
+	background: url('assets/icon-select-success.png') no-repeat center right 10px #f4fcf2 !important;
+}
+
+.err {
+    border: 1px solid #c13839 !important;
+    background-color: #fceff1 !important;
+	color: #c13839 !important;
+}
+.msg {
+	padding: 10px 0;
+	color: red;
+	font-size: .85rem;
+}
+
+.form-group:nth-child(n+3) {
+    margin-top: 20px;
+}
+.input-text__label {
+    display: block;
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    color: #707070;
+	text-align: left;
+}
+/* CTA */
+.cta {
+	width: 100%;
+	margin: 40px 0;
+	font-size: 22px;
+	padding: 23px 0;
+	color: #fff;
+    box-shadow: 0.125rem 0.1875rem 0.25rem rgb(0 0 0 / 36%);
+    background: #199b01;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.btn-blue {
+    background: #1a1759;
+	box-shadow: unset;
+	border-radius: 0;
+	font-weight: 500;
+}
+.btn-blue:nth-child(n+2) {
+	margin: 15px 0;
+}
+.ghost {
+	background: transparent !important;
+	border: 1px solid #fff;
+}
+body.is_white .ghost {
+	border: 1px solid #1a1a1a;
+	color: #1a1a1a;
+}
+
+.full {
+	max-width: 250px;
+}
+.full-100 {
+	width: 96% !important;
+	max-width: 350px !important;
+}
+
+/*** Step effects ***/
+
+/*
+.step[data-effect="left"] {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+}
+*/
+
+.step[data-step="1"] {
+	display: block;
+} 
+
+
+@media (max-width:768px) {
+	.free-sample__item {
+		width: 100%;
+	}
+}
+
+@media (max-width:640px) {
+}
+@media (max-width:480px) {
+	header {
+		padding: 5px;
+	}
+	header img {
+		max-width: 120px;
+	}
+	h1, h2, h3 {
+		margin: 10px 0;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1.125rem;
+	}
+	.form-group:nth-child(n+3) {
+		margin-top: 10px;
+	}
+	.cta {
+		margin: 20px 0;
+	}
+	.list_title {
+		font-size: 1rem;
+	}
+}
+@media (max-width:380px) {
+	select {
+		background-size: 16px auto !important;
+		padding: 20px 10px;
+	}
+}
+
+/* iPhone 12 and iPhone 12 Pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3),
+	
+	(device-width: 375px) 
+    and (device-height: 812px) 
+	and (-webkit-device-pixel-ratio: 3),
+	
+	(device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3)  {
+}
