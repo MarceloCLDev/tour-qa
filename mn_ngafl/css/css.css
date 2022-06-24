@@ -275,7 +275,7 @@ body.step11 .step-item {
 	box-shadow: unset;
 }
 
-[data-step="1"] {
+[data-step="11"] {
 	display: block;
 }
 [data-step="7"] .q img {
